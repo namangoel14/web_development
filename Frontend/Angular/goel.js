@@ -1,0 +1,1 @@
+console.log("Hello, I am Javascript code in Angular framework");
