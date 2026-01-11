@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        p{
+            border: 2px solid black;
+        }
+         /* .redClass{
+            color:red !important;
+        } 
+            ID Selectors
+         #redElement{
+            color: green ;
+        }
+        .bgblue{
+            background-color: blue;
+        }
+        #firstId{
+            color: blue
+        } */
+         /* Grounping selectors */
+         #firstId, .redClass {
+            color: blueviolet;
+         }
+         .bgblue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS SELECTORS</h1>
+    <p id="firstId">This is a paragraph element.</p>
+    <p id="redElement" class="redClass bgblue">This is an another paragraph element.</p>
+    <div>
+        <p>This paragraph is inside a div element.</p>
+        <p>This is another paragraph inside the div element.</p>
+    </div>
+    
+</body>
+</html>
