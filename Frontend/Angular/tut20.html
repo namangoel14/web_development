@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model, margin and padding.</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+        .container{
+          background-color: lightslategray;
+          border: 4px solid rgb(38, 68, 70);
+          /* padding-top: 80px;
+          padding-bottom: 80px;
+          padding-left: 40px;
+          padding-right: 40px; */
+          /* padding: 80px; */
+          /* we can also use shorthand property for padding  padding: top right bottom left; */ 
+          /* padding: 80px 40px 80px 40px; */
+          /* padding: x(top/bottom) y(left/right); */
+          padding: 60px 30px;
+          margin: 40px 20px;
+          border-radius: 25px;
+          width: 500px;
+          
+          
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>This is my First Heading</h2>
+      <p id="firstId">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem
+        vel, molestias iusto veritatis eos nulla ipsa inventore quo? Obcaecati
+        qui quasi fugiat laboriosam debitis dolorem, architecto cupiditate quis
+        inventore.
+      </p>
+    </div>
+    <div class="container">
+      <h2>This is my Second Heading</h2>
+      <p id="secondId">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem
+        vel, molestias iusto veritatis eos nulla ipsa inventore quo? Obcaecati
+        qui quasi fugiat laboriosam debitis dolorem, architecto cupiditate quis
+        inventore.
+      </p>
+    </div>
+    <div class="container">
+      <h2>This is my Third Heading</h2>
+      <p id="thirdId">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem
+        vel, molestias iusto veritatis eos nulla ipsa inventore quo? Obcaecati
+        qui quasi fugiat laboriosam debitis dolorem, architecto cupiditate quis
+        inventore.
+      </p>
+    </div>
+  </body>
+</html>
