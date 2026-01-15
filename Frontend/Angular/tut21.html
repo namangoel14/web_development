@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 900px;
+        border: 5px solid black;
+        margin: 33px auto;
+        padding-right: 8px;
+        background-color: burlywood;
+      }
+
+      body {
+        font-family: "Oswald", sans-serif;
+      }
+
+      .item {
+        border: 3px solid black;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: lightgray;
+      }
+
+      #fruit {
+        float: right;
+        width: 48%;
+      }
+
+      #computer {
+        float: left;
+        width: 48%;
+      }
+
+      #Stationary {
+        /* float: left; */
+        /* clear: left; */
+        clear: both;
+        width: 100%;
+      }
+      p,h3 {
+        /* text-align: left; */
+        /* text-align: right; */
+        /* text-align:center; */
+        text-align: justify;
+      }
+      h1 {
+        margin: auto;
+        width: 255px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my Store</h1>
+      <div id="fruit" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitPara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero porro
+          esse reiciendis aliquid exercitationem eos modi ipsa velit, sint
+          adipisci ut consequatur veritatis qui facilis numquam totam fugit
+          recusandae eius? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Eaque doloremque consequuntur alias voluptate accusantium nihil
+          a numquam totam aspernatur expedita harum optio blanditiis, tempore
+          in, officiis itaque. Dicta nemo dolores harum, culpa excepturi eius.
+        </p>
+      </div>
+      <div id="computer" class="item">
+        <h3>Computer</h3>
+        <p id="computerPara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero porro
+          esse reiciendis aliquid exercitationem eos modi ipsa velit, sint
+          adipisci ut consequatur veritatis qui facilis numquam totam fugit
+          recusandae eius? Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Esse, nisi? Culpa commodi qui neque laudantium eos iusto ab
+          totam, dicta dolorum repellendus? Sit ipsam, cupiditate quo deleniti
+          possimus laboriosam sed quis ipsa corrupti neque.
+        </p>
+      </div>
+      <div id="Stationary" class="item">
+        <h3>Stationary</h3>
+        <p id="stationaryPara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero porro
+          esse reiciendis aliquid exercitationem eos modi ipsa velit, sint
+          adipisci ut consequatur veritatis qui facilis numquam totam fugit
+          recusandae eius? Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Mollitia tempore possimus ipsum quaerat nulla? In enim nihil
+          consequatur, amet vel officiis deleniti illum aliquam reprehenderit
+          nostrum asperiores rem, corrupti error voluptas, quidem recusandae
+          neque?
+        </p>
+      </div>
+      <div id="Stationary" class="item">
+        <h3>Glasses</h3>
+        <p id="glassesPara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero porro
+          esse reiciendis aliquid exercitationem eos modi ipsa velit, sint
+          adipisci ut consequatur veritatis qui facilis numquam totam fugit
+          recusandae eius? Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Mollitia tempore possimus ipsum quaerat nulla? In enim nihil
+          consequatur, amet vel officiis deleniti illum aliquam reprehenderit
+          nostrum asperiores rem, corrupti error voluptas, quidem recusandae
+          neque?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
