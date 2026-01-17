@@ -103,3 +103,133 @@ eg;
     <p id="firstId">This is the grouping selector</p>
     <p id="firstClss">This is the Grouping selector</p>
 </body>
+
+- Fonts in CSS
+In CSS, We have 2 types of fonts: 
+1. Web Safe Fonts
+2. Web Fonts
+
+- Web Safe Fonts are those fonts which are inbuild in our operating system and we don't have to use from external/3rd partywebsites.
+Like: 
+
+<style>
+    p {
+        font-family: arial;
+    }
+</style>
+
+So over here the font-family has arial which is inbuild in our operatin system and we can use easily. 
+
+- Web Fonts are those fonts if we want to use some other styles in fonts then we have to use external websites link to include in our html structure to apply them. 
+Like: We can use google fonts sites to choose any of them and copy the hyperlink and font-family value to include in our structure/project. 
+<head>
+    <link rel="stylesheet" href="googleFonts.com/oswaldfont"></link>
+    <style>
+        p{
+            font-family: "oswald";
+        }
+    </style>
+</head>
+
+Now in CSS we have several font properties to apply to make design more responsive: 
+eg; 
+1. line-height -> it use to provide the certain height of that font in webpage.
+2. font-size -> it adjust the size of the font. 
+3. font-weight -> it give the boldness as per your need. 
+4. font-style - > it provide the style to the font like italic.
+
+- Colors in CSS
+In CSS there are 3 types are representation of colors.
+1. eg; 
+<style>p{color: red;}</style>
+
+2. rgb color.
+rgb means Red Green Blue (RGB)
+
+syntax -> rgb(0,0,0,0)
+       -> rgb(0-255, 0-255, 0-255, 0-1);
+Red -> 0-255 range of colors     
+Green -> 0-255 range of colors
+Blue -> 0-255 range of colors
+Transparency -> 0-1
+
+3. Hex color: 
+eg; <style>p{color: #ffffff}</style>
+means, ff ff ff
+ff, ff, ff every hex values has its individual color value, and after merge together it form one color.
+
+- Background and border in CSS
+
+In border we have some property: 
+1. border-width
+2. border-style
+3. border-color
+
+we can also merge them in single border property: 
+like: 
+
+border: 4px solid red;
+
+4px is border-width;
+solid is border-style;
+red is border-color.
+
+4. border-radius Property -> to curv the border corners/edges. 
+
+like: border-radius: 4px;
+
+5. border-top
+6. border-bottom
+7. border-left
+8. border-right
+
+- border-top: 4px solid black; -> property is provide the value to top border line only.
+- border-bottom: 4px solid red; -> property is provide the value to bottom border line only.
+- border-right: 4px solid green; -> property is provide the value to right border line only.
+- border-left: 4px solid yellow; -> property is provide the value to left border line only.
+
+9. border-top-radius
+10. border-bottom-radius
+11. border-right-bottom
+12. border-left-bottom
+
+- border-top-right-radius: 4px;  -> property is provide the curv to top-right of the corner of the box.
+- border-top-left-radius: 4px;  -> property is provide the curv to top-left of the corner of the box.
+- border-bottom-left-radius: 4px;  -> property is provide the curv to bottom-right of the corner of the box.
+- border-bottom-right-radius: 4px;  -> property is provide the curv to bottom-left of the corner of the box.
+
+- If we want to add the image in the background we can use below property: 
+1. background-image: url("")
+
+In url() -> we can also provide path image which is stored in our directory and external image as well. 
+
+For internal image -> url("/path/of/the/image")
+For external Image -> utl("/https:google.com/images")
+
+- When we insert the image we will see the repeatness in the background we handle this repeatness with some css property: 
+
+1. background-repeat: repeat-x;
+2. background-repeat: repeat-y;
+3. background-repeat: no-repeat;
+
+- With background-repeat: repeat-x; -> it will repeat only from x-axis not from y-axis. 
+- With background-repeat: repeat-y; -> it will repeat only from y-axis not from x-axis. 
+- With background-repeat: no-repeat; -> it will not repeat from both the axis.
+
+- We can also adjust the position of the image as well with some CSS property. 
+
+1. background-position: center center;
+2. background-position: top center;
+3. background-position: top left;
+4. background-position: top right;
+5. background-position: bottom center;
+6. background-position: bottom left;
+7. background-position: bottom right;
+
+- background-position: center center; -> property adjust the image at the center of the box means it will divide the same same from the top, bottom, left and right.
+- background-position: top center; -> property adjust image at the top center of the box.
+- background-position: top right; -> property adjust image at the top right of the box.
+- background-position: top left; -> property adjust image at the top left of the box.
+- background-position: bottom center; -> property adjust image at the bottom center of the box.
+- background-position: bottom left; -> property adjust image at the bottom left of the box.
+- background-position: bottom right; -> property adjust image at the bottom right of the box.
