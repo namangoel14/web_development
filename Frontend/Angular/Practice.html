@@ -1,57 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice</title>
+    <title>Practice-box model</title>
     <style>
-      #paraId {
-        background-color: yellowgreen;
-        height: 100px;
-        width: 500px;
-        /* border-width: 4px;
-        border-style: solid;
-        border-color: red; */
-        /* border: 4px solid green; */
-        border-top: 4px solid red;
-        border-bottom:4px solid blue;
-        border-left: 4px solid black;
-        border-right: 4px solid violet;
-        /* border-radius: 10px; */
-        border-top-left-radius: 10px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 5px;
-        padding: 10px;
+      /* Universal Selector */
+      *{
+        box-sizing: border-box;
       }
-      #imageId {
-        background-image: url("https://www.w3schools.com/css/img_lights.jpg");
-        height: 1000px;
-        width: 1500px;
-        border: 10px solid black;
-        /* background-repeat: repeat-x;
-        background-repeat: repeat-y; */
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* background-position: top right; */
-        /* background-position: top left; */
-        /* background-position: top center; */
-        /* background-position: bottom center; */
-        /* background-position: bottom right; */
-        /* background-position: bottom left; */
-        
+      .container{
+        background-color: lightslategray;
+        /* margin-left: 10px;
+        margin-right: 10px;
+        margin-top:10px;
+        margin-bottom: 10px; */
+        /* margin: 10px; */
+        /* margin: 10px 30px 10px 30px; */
+        margin: 10px 30px;
+        border: 4px solid lightgray;
+        /* padding: 10px; */
+        /* padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px; */
+        /* padding: 30px 150px 30px 150px; */
+        padding: 30px 150px;
+        width: 600px;
+       
+
+      }
+      body{
+        background-color: rgb(37, 123, 151);
       }
     </style>
   </head>
   <body>
-    <h1>Practice</h1>
-    <p id="paraId" class="fontPara">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis
-      asperiores sint fugit iste iusto tempore a, officia, dolore ipsam veniam
-      dolorem quod cum tenetur eos doloremque aut! Magni tempora aut hic eius
-      dolore!
-    </p>
-    <h1>Image</h1>
-    <p id="imageId" class="fontPara"></p>
+    <div class="container">
+      <h2>This is my First Heading</h2>
+      <p id="firstPara">This is my first paragraph.</p>
+    </div>
+    <div class="container">
+      <h2>This is my Second Heading</h2>
+      <p id="secondPara">This is my second paragraph.</p>
+    </div>
+    <div class="container">
+      <h2>This is my Third Heading</h2>
+      <p id="thirdPara">This is my third paragraph.</p>
+    </div>
   </body>
 </html>
