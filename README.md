@@ -233,3 +233,14 @@ For external Image -> utl("/https:google.com/images")
 - background-position: bottom center; -> property adjust image at the bottom center of the box.
 - background-position: bottom left; -> property adjust image at the bottom left of the box.
 - background-position: bottom right; -> property adjust image at the bottom right of the box.
+
+- Box model -> content, padding, border and margin. 
+
+Css box model define how an element size is calculated with the content, padding, border and margin. 
+
+So we have CSS BOX MODEL: 
+
+First layer is MARGIN, 
+Second layer is BORDER, 
+Third layer is PADDING, and 
+at the end there is CONTENT.
