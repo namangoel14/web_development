@@ -244,3 +244,84 @@ First layer is MARGIN,
 Second layer is BORDER, 
 Third layer is PADDING, and 
 at the end there is CONTENT.
+
+eg: 
+padding, margin and border
+<style>
+    p{
+        border: 4px solid lightgray;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+where, 
+border: 4px solid lightgray; -> 4px is border-width, solid is border-style and lightgray is border-color.
+padding: 10px; -> means from left, right, top and bottom all the side are 10px value. 
+margin: 10px; -> means from left, right, top and bottom all the side are 10px value.
+
+We can also provide with individual values of individual side in padding and margin as well. 
+
+eg; 
+padding-left: 10px;
+padding-right: 30px;
+padding-top: 5px;
+padding-bottom: 50px;
+
+margin-left: 10px;
+margin-right: 30px;
+margin-top: 5px;
+margin-bottom: 50px;
+
+- We also provide the all these in one property as well. 
+
+syntax: 
+padding: top right bottom left;
+margin: top right bottom left;
+
+eg; 
+
+padding: 10px 30px 10px 30px;
+margin: 10px 30px 10px 30px;
+
+- If we want to provide same top/bottom and left/right values in a single property we can use like below: 
+
+syntax: 
+
+padding: x(top/bottom) y(left/right);
+margin: x(top/bottom) y(left/right);
+
+eg; 
+
+padding: 10px 30px;
+margin: 10px 30px;
+
+- Sometimes when we  adjusts the padding and margin but somehow the box width and size gets changed it get unstable and not fixed. So in this case we can use box-sizing property to fix the current width and height of the box. 
+
+eg; 
+
+box-sizing: border-box;
+
+- We have the universal selector which we can make some porperty universally applicable for other selectors and properties. 
+
+We can use like below: 
+
+<style>
+    /* UNIVERSAL SELECTOR */
+    *{
+        box-sizing: border-box;
+    }
+</style>
+
+- We have body selector as well to change anything inside the body. 
+
+eg: 
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /* BODY SELECTOR */
+    body{
+        background-color: blue;
+    }
+</style>
