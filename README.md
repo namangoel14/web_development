@@ -325,3 +325,67 @@ eg:
         background-color: blue;
     }
 </style>
+
+-CSS Float and Clear property.
+
+- Float is the CSS property which adjusts the box or any content of the web page. Like;
+
+- float: left -> it shifted the box towards the left side. 
+- float: right ->it shifted the box towards the rigth side.
+
+- overlapping of content/ boxes, to resolve this we can use clear property in CSS. 
+
+- If we want to clear the content from the left we can use: 
+
+<style>
+    p{
+        clear: left;
+    }
+</style>
+- If we want to clear the content from the right we can use: 
+
+<style>
+    p{
+        clear: right;
+    }
+</style>
+
+- If we want to remove the overlapping/clear the content from the both the sides we can use below property in clear. 
+
+<style>
+    p{
+        clear: both
+    }
+</style>
+
+- We can also align the text as well inside the box. 
+Like: 
+<style>
+    p{
+        text-align: left;
+    }
+</style>
+<style>
+    p{
+        text-align: right;
+    }
+</style>
+<style>
+    p{
+        text-align: center;
+    }
+</style>
+<style>
+    p{
+        text-align: justify;
+    }
+</style>
+
+Where, 
+
+text-align: left; -> This  align the text of the box towards the left side. 
+text-align: right; -> This  align the text of the box towards the right side. 
+text-align: center; -> This  align the text of the box towards the center side. 
+text-align: justify; -> This property distribute left and right sides in equal space. 
+
+

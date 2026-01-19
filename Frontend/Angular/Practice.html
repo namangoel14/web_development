@@ -3,50 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice-box model</title>
+    <title>Practice-float and clear CSS property</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* Universal Selector */
-      *{
+      * {
         box-sizing: border-box;
       }
-      .container{
-        background-color: lightslategray;
-        /* margin-left: 10px;
-        margin-right: 10px;
-        margin-top:10px;
-        margin-bottom: 10px; */
-        /* margin: 10px; */
-        /* margin: 10px 30px 10px 30px; */
-        margin: 10px 30px;
-        border: 4px solid lightgray;
-        /* padding: 10px; */
-        /* padding-top: 10px;
-        padding-left: 20px;
-        padding-right: 10px;
-        padding-bottom: 20px; */
-        /* padding: 30px 150px 30px 150px; */
-        padding: 30px 150px;
-        width: 600px;
-       
-
+      .container {
+        background-color: lightgrey;
+        border: 4px solid black;
+        width: 900px;
+        margin: 40px auto;
       }
-      body{
-        background-color: rgb(37, 123, 151);
+      .item {
+        background-color: grey;
+        border: 3px solid black;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        width: 700px;
+      }
+      body {
+        font-family: "Oswald", sans-serif;
+      }
+      #fruitItem {
+        float: left;
+        width: 48%;
+      }
+      #secondItem {
+        float: right;
+        width: 48%;
+      }
+      #stationaryItem {
+        /* float: left; */
+        width: 99.5%;
+        clear: both;
+      }
+      p, h3 {
+        /* text-align: left; */
+        /* text-align: right; */
+        /* text-align: center; */
+        text-align: justify;
+      }
+      h1 {
+        margin: auto;
+        width: 290px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h2>This is my First Heading</h2>
-      <p id="firstPara">This is my first paragraph.</p>
-    </div>
-    <div class="container">
-      <h2>This is my Second Heading</h2>
-      <p id="secondPara">This is my second paragraph.</p>
-    </div>
-    <div class="container">
-      <h2>This is my Third Heading</h2>
-      <p id="thirdPara">This is my third paragraph.</p>
+      <h1>Welcome to my store</h1>
+      <div id="fruitItem" class="item">
+        <h2>Fruits</h2>
+        <p id="fruitPara" class="para">
+          Welcome to the fruit store. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Accusantium, ea qui! Ducimus quam repudiandae
+          assumenda molestias quo magnam quis optio omnis, tempore fugit quaerat
+          expedita debitis voluptatem aperiam veritatis, nostrum incidunt sunt,
+          voluptatibus vero!
+        </p>
+      </div>
+      <div id="secondItem" class="item">
+        <h2>Computers</h2>
+        <p id="computerPara" class="para">
+          Welcome to the computer store. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maiores doloribus, consectetur facilis libero
+          quaerat corrupti natus repellendus atque distinctio, perspiciatis nisi
+          hic! Rerum voluptates, animi perferendis ipsum dolorum accusamus!
+          Cupiditate vero odio deleniti ut.
+        </p>
+      </div>
+
+      <div id="stationaryItem" class="item">
+        <h2>Stationary</h2>
+        <p id="stationaryPara" class="para">
+          Welcome to the Stationary store. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quo quidem minus itaque distinctio!
+          Reprehenderit, excepturi inventore. Rerum corrupti sequi aut inventore
+          magnam sint velit vel excepturi! Voluptatum delectus laborum, nostrum
+          non et reprehenderit eos!
+        </p>
+      </div>
     </div>
   </body>
 </html>
