@@ -389,3 +389,54 @@ text-align: center; -> This  align the text of the box towards the center side.
 text-align: justify; -> This property distribute left and right sides in equal space. 
 
 
+- Styling links and buttons
+
+-> If we want to link some button we can use <a> tag like below: 
+
+eg; <a href="" class="btn">Read More</a>
+
+-> And if we want to form real button then we can use <button></button> tag in html to create a button. 
+
+eg; <button class="btn">Contact us</button>
+
+-> Now if we want to make the cursor as in pointer form whenever we hover on the buttons we can use below property: 
+
+eg; 
+<style>
+    .btn {
+        cursor: pointer;
+    }
+</style>
+
+-> When we use anchor <a> tag it create the text in underline form and the text color is different so to remove the underline: 
+
+eg; <style>
+    .a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+where, 
+text-decoration property is to remove the hyperlink line from under the read more text 
+color is to make the text in black. 
+
+-> Now If we want whenever we click on button it change the color when it is in active state we can use below property and selector. 
+
+eg; 
+<style>
+    a:active {
+        background: green;
+    }
+</style>
+
+-> If we want whenever we visit any site when we click on the button and visited the previous site again the color of button should change then we can use below selector. 
+
+eg; 
+<style>
+    a:visited {
+        background-color: blue;
+    }
+</style>
+
+These form of selectors are known as pseudo seletors in CSS. 
