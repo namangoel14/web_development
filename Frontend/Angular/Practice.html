@@ -3,90 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice-float and clear CSS property</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
+    <title>Practice-Links and buttons</title>
     <style>
-      * {
+      .container{
+        background-color: lightgoldenrodyellow;
+        border: 4px solid black;
+        padding: 20px 10px;
+        margin: 40px auto;
+        width: 666px;
         box-sizing: border-box;
       }
-      .container {
-        background-color: lightgrey;
-        border: 4px solid black;
-        width: 900px;
-        margin: 40px auto;
+      .btn {
+        border: 1px solid black;
+        background-color: rgb(129, 160, 175);
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 4px;
+        padding: 6px;
+        font-weight: bold;
       }
-      .item {
-        background-color: grey;
-        border: 3px solid black;
-        margin: 12px 3px;
-        padding: 12px 3px;
-        width: 700px;
+      .btn:hover{
+        cursor: pointer;
+        /* background-color: lightblue; */
       }
-      body {
-        font-family: "Oswald", sans-serif;
+      a{
+        text-decoration: none;
+        color: black;
       }
-      #fruitItem {
-        float: left;
-        width: 48%;
+      a:visited{
+        background-color: lightyellow;
       }
-      #secondItem {
-        float: right;
-        width: 48%;
+      a:active{
+        background-color: lightgreen;
       }
-      #stationaryItem {
-        /* float: left; */
-        width: 99.5%;
-        clear: both;
-      }
-      p, h3 {
-        /* text-align: left; */
-        /* text-align: right; */
-        /* text-align: center; */
-        text-align: justify;
-      }
-      h1 {
-        margin: auto;
-        width: 290px;
-      }
+      
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to my store</h1>
-      <div id="fruitItem" class="item">
-        <h2>Fruits</h2>
-        <p id="fruitPara" class="para">
-          Welcome to the fruit store. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Accusantium, ea qui! Ducimus quam repudiandae
-          assumenda molestias quo magnam quis optio omnis, tempore fugit quaerat
-          expedita debitis voluptatem aperiam veritatis, nostrum incidunt sunt,
-          voluptatibus vero!
-        </p>
-      </div>
-      <div id="secondItem" class="item">
-        <h2>Computers</h2>
-        <p id="computerPara" class="para">
-          Welcome to the computer store. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Maiores doloribus, consectetur facilis libero
-          quaerat corrupti natus repellendus atque distinctio, perspiciatis nisi
-          hic! Rerum voluptates, animi perferendis ipsum dolorum accusamus!
-          Cupiditate vero odio deleniti ut.
-        </p>
-      </div>
-
-      <div id="stationaryItem" class="item">
-        <h2>Stationary</h2>
-        <p id="stationaryPara" class="para">
-          Welcome to the Stationary store. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quo quidem minus itaque distinctio!
-          Reprehenderit, excepturi inventore. Rerum corrupti sequi aut inventore
-          magnam sint velit vel excepturi! Voluptatum delectus laborum, nostrum
-          non et reprehenderit eos!
-        </p>
-      </div>
+    <div id="content" class="container">
+      <h3>This is my Heading</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi cum
+        iste harum fugit in, nemo vitae cupiditate dignissimos fuga at vel quas
+        ullam facilis error mollitia consequatur animi debitis. Labore, fugit
+        repellat cupiditate nulla dolorum itaque ipsum ab unde deleniti optio,
+        sapiente velit. Nesciunt consectetur aliquid ipsum nisi officia fugit
+        ullam. Officiis aliquam eos sequi temporibus impedit? Soluta expedita
+        voluptas consequuntur nihil ea odit.
+      </p>
+      <!-- <a href="https://www.google.com/" class="btn">Read more</a> -->
+      <!-- <a href="https://facebook.com" class="btn">Read more</a> -->
+      <!-- <a href="https://github.com" class="btn">Read more</a> -->
+      <!-- <a href="https://twitter.com" class="btn">Read more</a> -->
+      <!-- <a href="https://linkedin.com" class="btn">Read more</a> -->
+       <a href="https://www.youtube.com" class="btn">Read more</a>
+      <button class="btn">Contact us</button>
     </div>
   </body>
 </html>
