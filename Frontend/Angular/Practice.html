@@ -3,61 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice-Links and buttons</title>
+    <title>Navigation Bar</title>
     <style>
-      .container{
-        background-color: lightgoldenrodyellow;
-        border: 4px solid black;
-        padding: 20px 10px;
-        margin: 40px auto;
-        width: 666px;
-        box-sizing: border-box;
+      .navbar {
+        background: black;
+        border-radius: 10px;
+        float: left;
+        padding: 10px 10px;;
       }
-      .btn {
-        border: 1px solid black;
-        background-color: rgb(129, 160, 175);
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: 4px;
-        padding: 6px;
-        font-weight: bold;
+      .navbar li {
+        
+        list-style: none;
+        margin: 20px 4px;
+        
       }
-      .btn:hover{
-        cursor: pointer;
-        /* background-color: lightblue; */
+      .navbar ul {
+        overflow: auto;
       }
-      a{
+      .navbar li a {
+        padding: 6px 6px;
         text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .navbar li a:hover {
+        background-color: violet;
         color: black;
+        
       }
-      a:visited{
-        background-color: lightyellow;
+      .Searchbar {
+        color: white;
+        
+        padding: 0px 7px;
       }
-      a:active{
-        background-color: lightgreen;
+      .navbar input {
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 5px 15px;
+        width: 200px;
       }
-      
     </style>
   </head>
   <body>
-    <div id="content" class="container">
-      <h3>This is my Heading</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi cum
-        iste harum fugit in, nemo vitae cupiditate dignissimos fuga at vel quas
-        ullam facilis error mollitia consequatur animi debitis. Labore, fugit
-        repellat cupiditate nulla dolorum itaque ipsum ab unde deleniti optio,
-        sapiente velit. Nesciunt consectetur aliquid ipsum nisi officia fugit
-        ullam. Officiis aliquam eos sequi temporibus impedit? Soluta expedita
-        voluptas consequuntur nihil ea odit.
-      </p>
-      <!-- <a href="https://www.google.com/" class="btn">Read more</a> -->
-      <!-- <a href="https://facebook.com" class="btn">Read more</a> -->
-      <!-- <a href="https://github.com" class="btn">Read more</a> -->
-      <!-- <a href="https://twitter.com" class="btn">Read more</a> -->
-      <!-- <a href="https://linkedin.com" class="btn">Read more</a> -->
-       <a href="https://www.youtube.com" class="btn">Read more</a>
-      <button class="btn">Contact us</button>
-    </div>
+    <header>
+      <nav class="navbar"><ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact US</a></li>
+      
+      <div class="Searchbar">
+        <input type="text" id="search" class="Search" placeholder="Search...">
+      </div></ul>
+    </nav>
+    </header>
   </body>
 </html>
