@@ -3,59 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation Bar</title>
+    <title>Display properties in CSS</title>
     <style>
-      .navbar {
-        background: black;
-        border-radius: 10px;
-        float: left;
-        padding: 10px 10px;;
+      * {
+        box-sizing: border-box;
       }
-      .navbar li {
+      img {
+        width: 50px;
+        display: block;
+        margin: auto;
+      }
+      header {
         
-        list-style: none;
-        margin: 20px 4px;
-        
+        border: 4px solid black;
+        margin: auto;
+        width: 1200px;
       }
-      .navbar ul {
-        overflow: auto;
+      h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        margin: 0px;
+        text-align: center;
       }
-      .navbar li a {
-        padding: 6px 6px;
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
+      .box {
+        border: 4px solid black;
+        margin: 4px 0px;
+        background-color: lightslategray;
+        padding: 10px;
+        display: inline-block;
+        width: 33.1%;
       }
-      .navbar li a:hover {
-        background-color: violet;
-        color: black;
-        
-      }
-      .Searchbar {
-        color: white;
-        
-        padding: 0px 7px;
-      }
-      .navbar input {
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 5px 15px;
-        width: 200px;
+      .container {
+        margin: auto;
+        width: 1200px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar"><ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact US</a></li>
-      
-      <div class="Searchbar">
-        <input type="text" id="search" class="Search" placeholder="Search...">
-      </div></ul>
-    </nav>
+    <header class="top">
+      <img
+        src="https://img.icons8.com/?size=100&id=S7zYv6mP5cs3&format=png&color=000000"
+        alt="Star Logo"
+      />
+      <h2>Welcome to my page!</h2>
     </header>
+    <div class="container">
+      <div class="box">
+        <h4>Box1</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+          ratione, tempora quasi sunt tenetur iusto nostrum tempore. Qui
+          expedita ex officia a. Nobis quidem eaque recusandae, animi ratione
+          debitis! Obcaecati commodi rerum unde libero pariatur ducimus ipsum,
+          totam minus! Dignissimos esse eveniet exercitationem vero ea, animi,
+          qui alias voluptates temporibus aliquam ut delectus sed mollitia
+          possimus, suscipit atque dolorem laudantium? Laudantium labore quia
+          neque.
+        </p>
+      </div>
+      <div class="box"><h4>Box2</h4><p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+          ratione, tempora quasi sunt tenetur iusto nostrum tempore. Qui
+          expedita ex officia a. Nobis quidem eaque recusandae, animi ratione
+          debitis! Obcaecati commodi rerum unde libero pariatur ducimus ipsum,
+          totam minus! Dignissimos esse eveniet exercitationem vero ea, animi,
+          qui alias voluptates temporibus aliquam ut delectus sed mollitia
+          possimus, suscipit atque dolorem laudantium? Laudantium labore quia
+          neque.
+        </p></div>
+      <div class="box"><h4>Box3</h4><p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+          ratione, tempora quasi sunt tenetur iusto nostrum tempore. Qui
+          expedita ex officia a. Nobis quidem eaque recusandae, animi ratione
+          debitis! Obcaecati commodi rerum unde libero pariatur ducimus ipsum,
+          totam minus! Dignissimos esse eveniet exercitationem vero ea, animi,
+          qui alias voluptates temporibus aliquam ut delectus sed mollitia
+          possimus, suscipit atque dolorem laudantium? Laudantium labore quia
+          neque.
+        </p></div>
+    </div>
   </body>
 </html>
