@@ -39,6 +39,9 @@
         background-color: rgba(236, 235, 235, 0.877);
         border-radius: 4px;
       }
+      nav ul li:not(.dashboard) {
+        
+      }
       .dashboard {
         background-color: rgb(34, 125, 199);
         border-radius: 4px;
@@ -73,6 +76,13 @@
         font-size: 16px;
         color: white;
       }
+      .side-bar-logo {
+        margin-right: 9px;
+        width: 18px;
+      }
+      .logo-link {
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -92,19 +102,19 @@
             /><a class="dashboard-link" chref="#">Dashboard</a>
           </li>
           <h5>TEMPLATES</h5>
-          <li><a href="#">Category Template</a></li>
-          <li><a href="#">Test Case Template</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/category_template.svg" alt="category logo"><a class="logo-link" href="#">Category Template</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/testcase_template.svg" alt="testcase logo"><a class="logo-link" href="#">Test Case Template</a></li>
           <h5>TEST CASE</h5>
-          <li><a href="#">Test Case Category</a></li>
-          <li><a href="#">Test Case</a></li>
-          <li><a href="#">Test Case Results</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/category.svg" alt="logo"><a class="logo-link" href="#">Test Case Category</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/test_cases.svg" alt="logo"><a class="logo-link" href="#">Test Case</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/testcase_results.svg" alt="logo"><a class="logo-link" href="#">Test Case Results</a></li>
           <h5>TEST SUITE</h5>
-          <li><a href="#">Test Suit</a></li>
-          <li><a href="#">Test Suite Results</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/test_suite.svg" alt="logo"><a class="logo-link" href="#">Test Suit</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/test_suite_results.svg" alt="logo"><a class="logo-link" href="#">Test Suite Results</a></li>
           <h5>SYSTEM TOOLS</h5>
-          <li><a href="#">Custom Package</a></li>
-          <li><a href="#">Scheduler</a></li>
-          <li><a href="#">Topology View</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/custom_package.svg" alt="logo"><a class="logo-link" href="#">Custom Package</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/scheduler.svg" alt="logo"><a class="logo-link" href="#">Scheduler</a></li>
+          <li><img class="side-bar-logo" src="/Frontend/Angular/imgs/topology_view.svg" alt="logo"><a class="logo-link" href="#">Topology View</a></li>
         </ul>
       </nav>
     </div>
