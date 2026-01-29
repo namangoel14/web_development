@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .logo {
+        margin-bottom: 10px;
+      }
+      .container {
+        position: fixed;
+        border-right: 2px solid lightgray;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-right: 85%;
+        
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      nav ul li {
+        list-style: none;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px 0px;
+      }
+      nav ul li:not(.dashboard):hover {
+        background-color: rgba(236, 235, 235, 0.877);
+        border-radius: 4px;
+      }
+      .dashboard {
+        background-color: rgb(34, 125, 199);
+        border-radius: 4px;
+        margin-right: 10px;
+        display: inline-flex;
+        width: 95%;
+        font-size: 10px;
+      }
+      h5 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: rgb(194, 191, 191);
+      }
+      h5::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: lightgray;
+        margin-right: 10px;
+      }
+      .dashboard-icon {
+        margin-bottom: 4px;
+        margin-right: 8px;
+        width: 20px;
+        font-size: 10px;
+      }
+      .dashboard-link {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 16px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="box">
+        <ul>
+          <img
+            class="logo"
+            src="/Frontend/Angular/imgs/autowifi_logo.svg"
+            alt="Amantya logo"
+          />
+          <li class="dashboard">
+            <img
+              class="dashboard-icon"
+              src="/Frontend/Angular/imgs/dashboard_ui_active.svg"
+              alt="Dashboard icon"
+            /><a class="dashboard-link" chref="#">Dashboard</a>
+          </li>
+          <h5>TEMPLATES</h5>
+          <li><a href="#">Category Template</a></li>
+          <li><a href="#">Test Case Template</a></li>
+          <h5>TEST CASE</h5>
+          <li><a href="#">Test Case Category</a></li>
+          <li><a href="#">Test Case</a></li>
+          <li><a href="#">Test Case Results</a></li>
+          <h5>TEST SUITE</h5>
+          <li><a href="#">Test Suit</a></li>
+          <li><a href="#">Test Suite Results</a></li>
+          <h5>SYSTEM TOOLS</h5>
+          <li><a href="#">Custom Package</a></li>
+          <li><a href="#">Scheduler</a></li>
+          <li><a href="#">Topology View</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
