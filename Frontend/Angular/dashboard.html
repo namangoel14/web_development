@@ -130,17 +130,17 @@
       .total-testline {
         color: gray;
         border-right: 1px solid lightgray;
-        padding-right: 20px;
+        padding-right: 6px;
       }
 
       .busy-testline {
         color: red;
         border-right: 1px solid lightgray;
-        padding-right: 20px;
+        padding-right: 6px;
       }
       .available-testline {
         color: green;
-        padding-right: 20px;
+        padding-right: 3px;
       }
       /* .table-wrapper {
         width: 90%;
@@ -153,6 +153,9 @@
         border-bottom: 1px solid lightgray;
       } */
 
+      .table-wrapper * {
+        font-weight: 400 !important;
+      }
       .table-wrapper {
         display: inline-flex;
         align-items: center;
@@ -171,8 +174,6 @@
         font-size: 13px;
 
         width: fit-content;
-
-        
       }
       .table-wrapper table {
         width: auto;
@@ -190,11 +191,49 @@
         white-space: nowrap;
 
         vertical-align: stretch; 🔑 */
-        
 
         padding: 0 6px;
         height: 100%;
         line-height: 20px; /* fixed */
+      }
+
+      .resource {
+        gap: 20px;
+      }
+      .img-resource {
+        position: absolute;
+        top: 3%;
+        left: 89%;
+      }
+      .img-resource:hover {
+        cursor: pointer;
+      }
+      .img-notification {
+        width: 15px;
+        position: absolute;
+        top: 3.6%;
+        left: 91.3%;
+      }
+      .img-notification:hover {
+        cursor: pointer;
+      }
+      .img-admin {
+        width: 20px;
+        position: absolute;
+        top: 3.2%;
+        left: 93.4%;
+      }
+      .img-admin:hover {
+        cursor: pointer;
+      }
+      .admin-name {
+        position: absolute;
+        top: 3.4%;
+        left: 95%;
+        font-family: system-ui;
+      }
+      .admin-name:hover {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -204,13 +243,13 @@
         <ul>
           <img
             class="logo"
-            src="/Angular/imgs/autowifi_logo.svg"
+            src="/Frontend/Angular/imgs/autowifi_logo.svg"
             alt="Amantya logo"
           />
           <li class="dashboard">
             <img
               class="dashboard-icon"
-              src="/Angular/imgs/dashboard_ui_active.svg"
+              src="/Frontend/Angular/imgs/dashboard_ui_active.svg"
               alt="Dashboard icon"
             /><a class="dashboard-link" chref="#">Dashboard</a>
           </li>
@@ -218,14 +257,14 @@
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/category_template.svg"
+              src="/Frontend/Angular/imgs/category_template.svg"
               alt="category logo"
             /><a class="logo-link" href="#">Category Template</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/testcase_template.svg"
+              src="/Frontend/Angular/imgs/testcase_template.svg"
               alt="testcase logo"
             /><a class="logo-link" href="#">Test Case Template</a>
           </li>
@@ -233,21 +272,21 @@
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/category.svg"
+              src="/Frontend/Angular/imgs/category.svg"
               alt="logo"
             /><a class="logo-link" href="#">Test Case Category</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/test_cases.svg"
+              src="/Frontend/Angular/imgs/test_cases.svg"
               alt="logo"
             /><a class="logo-link" href="#">Test Case</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/testcase_results.svg"
+              src="/Frontend/Angular/imgs/testcase_results.svg"
               alt="logo"
             /><a class="logo-link" href="#">Test Case Results</a>
           </li>
@@ -255,14 +294,14 @@
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/test_suite.svg"
+              src="/Frontend/Angular/imgs/test_suite.svg"
               alt="logo"
             /><a class="logo-link" href="#">Test Suit</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/test_suite_results.svg"
+              src="/Frontend/Angular/imgs/test_suite_results.svg"
               alt="logo"
             /><a class="logo-link" href="#">Test Suite Results</a>
           </li>
@@ -270,21 +309,21 @@
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/custom_package.svg"
+              src="/Frontend/Angular/imgs/custom_package.svg"
               alt="logo"
             /><a class="logo-link" href="#">Custom Package</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/scheduler.svg"
+              src="/Frontend/Angular/imgs/scheduler.svg"
               alt="logo"
             /><a class="logo-link" href="#">Scheduler</a>
           </li>
           <li>
             <img
               class="side-bar-logo"
-              src="/Angular/imgs/topology_view.svg"
+              src="/Frontend/Angular/imgs/topology_view.svg"
               alt="logo"
             /><a class="logo-link" href="#">Topology View</a>
           </li>
@@ -294,20 +333,38 @@
     <div class="body">
       <header>
         <h3>Dashboard</h3>
-        <!-- <div class="testlines">
-          <p class="total-testline">Total Testlines:</p>
-          <p class="busy-testline">Busy Testlines:</p>
-          <p class="available-testline">Available Testlines:</p>
-        </div> -->
-
         <div class="table-wrapper">
           <table>
             <tr>
-              <th class="total-testline">Total Testlines: 1</th>
-              <th class="busy-testline">Busy Testlines: 0</th>
-              <th class="available-testline">Available Testlines: 1</th>
+              <th class="total-testline">
+                Total Testlines: <span style="color: black">&nbsp;1</span>
+              </th>
+              <th class="busy-testline">
+                Busy Testlines: <span style="color: black">&nbsp;0</span>
+              </th>
+              <th class="available-testline">
+                Available Testlines: <span style="color: black">&nbsp;1</span>
+              </th>
             </tr>
           </table>
+        </div>
+        <div class="resource">
+          <img
+            class="img-resource"
+            src="/Frontend/Angular/imgs/sidebarSettingicon.svg"
+            alt="resource"
+          />
+          <img
+            class="img-notification"
+            src="/Frontend/Angular/imgs/bell-icon.svg"
+            alt="notification"
+          />
+          <img
+            src="/Frontend/Angular/imgs/letter-a.png"
+            alt="admin"
+            class="img-admin"
+          />
+          <span class="admin-name">admin</span>
         </div>
       </header>
     </div>
