@@ -201,39 +201,55 @@
         gap: 20px;
       }
       .img-resource {
-        position: absolute;
-        top: 3%;
-        left: 89%;
+        position: fixed;
+        top: 14px;
+        left: 1655px;
       }
       .img-resource:hover {
         cursor: pointer;
       }
       .img-notification {
         width: 15px;
-        position: absolute;
-        top: 3.6%;
-        left: 91.3%;
+        position: fixed;
+        top: 18.2px;
+        left: 1705px;
       }
       .img-notification:hover {
         cursor: pointer;
       }
       .img-admin {
         width: 20px;
-        position: absolute;
-        top: 3.2%;
-        left: 93.4%;
+        position: fixed;
+        top: 14.7px;
+        left: 1750px;
       }
       .img-admin:hover {
         cursor: pointer;
       }
       .admin-name {
-        position: absolute;
-        top: 3.4%;
-        left: 95%;
+        position: fixed;
+        top: 17px;
+        left: 1780px;
         font-family: system-ui;
       }
       .admin-name:hover {
         cursor: pointer;
+      }
+      .wifi-client {
+        border: 1px solid lightgray;
+        width: 462px;
+        height: 250px;
+        border-radius: 14px;
+        margin-left: 22px;
+      }
+      .arrow-img {
+        width: 15px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+      }
+      .wifi-font {
+        
       }
     </style>
   </head>
@@ -367,6 +383,15 @@
           <span class="admin-name">admin</span>
         </div>
       </header>
+      <!-- Wifi clients -->
+      <div class="wifi-client">
+        <span class="wifi-font">WIFI CLEINTS</span>
+        <img
+          class="arrow-img"
+          src="/Frontend/Angular/imgs/arrowIcon.svg"
+          alt="arrow"
+        />
+      </div>
     </div>
   </body>
 </html>
