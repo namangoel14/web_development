@@ -21,7 +21,8 @@
         position: relative;
       }
       .insights {
-        border: 2px solid black;
+        background-color: white;
+        border: 1px solid lightgrey;
         border-radius: 12px;
         top: 0px;
         width: 49%;
@@ -30,7 +31,8 @@
         position: absolute;
       }
       .analytics {
-        border: 2px solid black;
+        background-color: white;
+        border: 1px solid lightgrey;
         border-radius: 12px;
         top: 0px;
         width: 49.9%;
@@ -40,6 +42,21 @@
       }
       html {
         overflow-y: scroll;
+      }
+      .inner-box {
+        border: 1px dashed lightgrey;
+        border-radius: 13px;
+        background-color: #f1f5f9;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        top: 45px;
+      }
+      .free {
+        position: absolute;
+        left: 343px;
+        top: 88px;
       }
     </style>
   </head>
@@ -280,7 +297,76 @@
         </div>
       </div>
       <div class="mid-body">
-        <div class="insights"></div>
+        <div class="insights">
+          <strong
+            style="
+              font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                &quot;Segoe UI&quot;,
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                &quot;Open Sans&quot;,
+                &quot;Helvetica Neue&quot;,
+                sans-serif;
+              position: absolute;
+              left: 10px;
+              top: 14px;
+            "
+            >Execution Insights</strong
+          >
+          <div class="inner-box">
+            <div class="system-status">
+              <img class="free" src="assets/imgs/free-system.svg" alt="free" />
+              <strong
+                style="
+                  font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    &quot;Segoe UI&quot;,
+                    Roboto,
+                    Oxygen,
+                    Ubuntu,
+                    Cantarell,
+                    &quot;Open Sans&quot;,
+                    &quot;Helvetica Neue&quot;,
+                    sans-serif;
+                  position: absolute;
+                  top: 140px;
+                  left: 299px;
+                "
+                >System Available</strong
+              >
+              <p
+                style="
+                  font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    &quot;Segoe UI&quot;,
+                    Roboto,
+                    Oxygen,
+                    Ubuntu,
+                    Cantarell,
+                    &quot;Open Sans&quot;,
+                    &quot;Helvetica Neue&quot;,
+                    sans-serif;
+                  color: #6c6a74;
+                  font-size: 14px;
+                  position: absolute;
+                  top: 176px;
+                  left: 265px;
+                "
+              >
+                The system is available for use.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="analytics"></div>
       </div>
     </div>
