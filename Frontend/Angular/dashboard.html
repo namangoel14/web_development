@@ -298,15 +298,43 @@
         left: 25%;
         padding: 0% 38.5% 0% 0%;
       }
-      .active-font {
+      .active-font, .connected-font, .online-font {
         font-size: 77%;
         color: green;
         padding: 0% 23%;
       }
-      .inactive-font {
+      .inactive-font, .disconnected-font, .offline-font {
         font-size: 77%;
         color: red;
         padding: 0% 23%;
+      }
+      .connected {
+        background-color: #ecf9f2;
+        border-radius: 8px;
+        position: absolute;
+        left: 0%;
+        padding: 0% 32.5% 0% 0%;
+      }
+      .disconnected {
+        background-color: #ffeeee;
+        border-radius: 8px;
+        position: relative;
+        left: 25%;
+        padding: 0% 32.5% 0% 0%;
+      }
+      .online {
+        background-color: #ecf9f2;
+        border-radius: 8px;
+        position: absolute;
+        left: 0%;
+        padding: 0% 37.2% 0% 0%;
+      }
+      .offline {
+        background-color: #ffeeee;
+        border-radius: 8px;
+        position: relative;
+        left: 25.6%;
+        padding: 0% 37.2% 0% 0%;
       }
     </style>
   </head>
@@ -480,6 +508,35 @@
         <strong class="wifi-num">2</strong>
         <span class="counts">Client Rig Counts</span>
         <img class="box-img" src="assets/imgs/new-rack.png" alt="client-rig" />
+        <div class="status">
+          <div class="connected">
+            <strong
+              style="
+                color: black;
+                font-weight: normal;
+                font-size: 15px;
+                padding: 1% 22%;
+                font-size: 13px;
+              "
+              >0</strong
+            >
+            <span class="connected-font"> Connected</span>
+          </div>
+          <div class="disconnected">
+            <strong
+              style="
+                color: black;
+                font-weight: normal;
+
+                font-size: 15px;
+                padding: 1% 22%;
+                font-size: 13px;
+              "
+              >2</strong
+            >
+            <span class="disconnected-font">Disconnected</span>
+          </div>
+        </div>
       </div>
       <div class="container3">
         <h4 class="wifi-font">HEALTH CHECK</h4>
@@ -487,6 +544,35 @@
         <strong class="wifi-num">13</strong>
         <span class="counts">Health Check Components Counts</span>
         <img class="box-img" src="assets/imgs/health.png" alt="health-check" />
+        <div class="status">
+          <div class="online">
+            <strong
+              style="
+                color: black;
+                font-weight: normal;
+                font-size: 15px;
+                padding: 1% 22%;
+                font-size: 13px;
+              "
+              >10</strong
+            >
+            <span class="online-font"> Online</span>
+          </div>
+          <div class="offline">
+            <strong
+              style="
+                color: black;
+                font-weight: normal;
+
+                font-size: 15px;
+                padding: 1% 22%;
+                font-size: 13px;
+              "
+              >13</strong
+            >
+            <span class="offline-font">Offline</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
