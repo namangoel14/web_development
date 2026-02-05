@@ -58,6 +58,39 @@
         left: 343px;
         top: 88px;
       }
+      .donut-testsuite {
+        width: 150px;
+        height: 135px;
+        position: absolute;
+        top: 98px;
+        left: 81px;
+        border-radius: 50%;
+        border: 11px solid lightgray;
+        border-top-color: #4caf50;
+        border-left-color: #ffd94c;
+        border-bottom-color: #ffd94c;
+        border-right-color: red;
+      }
+      .donut-testcase {
+        width: 150px;
+        height: 135px;
+        position: absolute;
+        top: 98px;
+        left: 375px;
+        border-radius: 50%;
+        border: 11px solid lightgray;
+        border-top-color: #4caf50;
+        border-left-color: #ffd94c;
+        border-bottom-color: red;
+        border-right-color: red;
+      }
+      .analytics-text {
+        font-family: system-ui;
+        position: absolute;
+        top: 10px;
+        left: 14px;
+      }
+      /* .donut-status {} */
     </style>
   </head>
   <body>
@@ -367,7 +400,16 @@
             </div>
           </div>
         </div>
-        <div class="analytics"></div>
+        <div class="analytics">
+          <strong class="analytics-text">Test Case / Suite Analytics</strong>
+          <div class="donut-testsuite"></div>
+          <div class="donut-testcase"></div>
+          <!-- <strong class="donut-status">Passed</strong
+          ><strong class="donut-status">Failed</strong
+          ><strong class="donut-status">Skipped</strong
+          ><strong class="donut-status">Pending</strong> -->
+          
+        </div>
       </div>
     </div>
   </body>
