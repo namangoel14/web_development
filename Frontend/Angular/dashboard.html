@@ -60,7 +60,7 @@
       }
       .donut-testsuite {
         width: 150px;
-        height: 135px;
+        height: 145px;
         position: absolute;
         top: 98px;
         left: 81px;
@@ -73,7 +73,7 @@
       }
       .donut-testcase {
         width: 150px;
-        height: 135px;
+        height: 145px;
         position: absolute;
         top: 98px;
         left: 375px;
@@ -90,6 +90,30 @@
         top: 10px;
         left: 14px;
       }
+      .inner-ts-text {
+        position: absolute;
+        left: 35px;
+        top: 70px;
+        font-family: system-ui;
+        font-size: 13px;
+      }
+      .inner-tc-text {
+        position: absolute;
+        left: 35px;
+        top: 70px;
+        font-family: system-ui;
+        font-size: 13px;
+      }
+      .analysis-status {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        left: 568px;
+        top: 110px;
+        font-family: system-ui;
+      }
+
       /* .donut-status {} */
     </style>
   </head>
@@ -402,13 +426,74 @@
         </div>
         <div class="analytics">
           <strong class="analytics-text">Test Case / Suite Analytics</strong>
-          <div class="donut-testsuite"></div>
-          <div class="donut-testcase"></div>
-          <!-- <strong class="donut-status">Passed</strong
-          ><strong class="donut-status">Failed</strong
-          ><strong class="donut-status">Skipped</strong
-          ><strong class="donut-status">Pending</strong> -->
-          
+          <div class="donut-testsuite">
+            <strong
+              style="
+                position: absolute;
+                top: 40px;
+                left: 56px;
+                font-size: 25px;
+                font-family: system-ui;
+              "
+              >7</strong
+            ><span class="inner-ts-text">Test Suites</span>
+          </div>
+          <div class="donut-testcase">
+            <strong
+              style="
+                position: absolute;
+                top: 40px;
+                left: 51px;
+                font-size: 25px;
+                font-family: system-ui;
+              "
+              >20</strong
+            ><span class="inner-tc-text">Test Cases</span>
+          </div>
+          <ul class="analysis-status">
+            <li style="color: #4caf50; font-size: 30px">
+              <span
+                style="
+                  color: black;
+                  font-size: 16px;
+                  position: absolute;
+                  left: 35px;
+                  top: 11px;
+                "
+                >Passed</span
+              >
+            </li>
+            <li style="color: #ef4444; font-size: 30px">
+              <span
+                style="
+                  color: black;
+                  font-size: 16px;
+                  position: absolute;
+                  bottom: 80px;
+                  left: 35px;
+                "
+                >Failed</span
+              >
+            </li>
+            <li style="color: #facc15; font-size: 30px">
+              <span
+                style="
+                  color: black;
+                  font-size: 16px;
+                  position: absolute;
+                  bottom: 45px;
+                  left: 35px;
+                "
+                >Skipped</span
+              >
+            </li>
+            <li style="color: #3b82f6; font-size: 30px">
+              <span style="color: black;font-size: 16px;
+                  position: absolute;
+                  bottom: 10px;
+                  left: 35px;">Pending</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
