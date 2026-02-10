@@ -6,115 +6,38 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css" />
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      .mid-body {
-        /* border: 2px solid black; */
-        margin: 0px 14px 0px 15px;
-        padding-top: 308px;
-        padding-right: 18px;
-        overflow-x: hidden;
-        position: relative;
-      }
-      .insights {
+      .end-body {
+        border: 1px solid lightgray;
         background-color: white;
-        border: 1px solid lightgrey;
-        border-radius: 12px;
-        top: 0px;
-        width: 49%;
-        left: 0px;
-        bottom: 0px;
-        position: absolute;
+        max-width: 100%;
+        min-height: 370px;
+        padding: 20px;
+        margin: 15px 16px 0;
+        border-radius: 10px;
+        
       }
-      .analytics {
-        background-color: white;
-        border: 1px solid lightgrey;
-        border-radius: 12px;
-        top: 0px;
-        width: 49.9%;
-        right: 0px;
-        bottom: 0px;
-        position: absolute;
+      .table-data {
+        margin-top: 40px;
+        border: 1px solid black;
+        width: 100%;
+        border-collapse: collapse;
       }
-      html {
-        overflow-y: scroll;
+      .table-data tr {
+        height: 45px;
       }
-      .inner-box {
-        border: 1px dashed lightgrey;
-        border-radius: 13px;
-        background-color: #f1f5f9;
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        top: 45px;
-      }
-      .free {
-        position: absolute;
-        left: 343px;
-        top: 88px;
-      }
-      .donut-testsuite {
-        width: 150px;
-        height: 145px;
-        position: absolute;
-        top: 98px;
-        left: 81px;
-        border-radius: 50%;
-        border: 11px solid lightgray;
-        border-top-color: #4caf50;
-        border-left-color: #ffd94c;
-        border-bottom-color: #ffd94c;
-        border-right-color: red;
-      }
-      .donut-testcase {
-        width: 150px;
-        height: 145px;
-        position: absolute;
-        top: 98px;
-        left: 375px;
-        border-radius: 50%;
-        border: 11px solid lightgray;
-        border-top-color: #4caf50;
-        border-left-color: #ffd94c;
-        border-bottom-color: red;
-        border-right-color: red;
-      }
-      .analytics-text {
-        font-family: system-ui;
-        position: absolute;
-        top: 10px;
-        left: 14px;
-      }
-      .inner-ts-text {
-        position: absolute;
-        left: 35px;
-        top: 70px;
+      .table-tr,
+      .table-td {
+        padding: 8px 12px;
+        border: 1px solid #e5e7eb;
+        text-align: left;
         font-family: system-ui;
         font-size: 13px;
+        
       }
-      .inner-tc-text {
-        position: absolute;
-        left: 35px;
-        top: 70px;
-        font-family: system-ui;
-        font-size: 13px;
+      a {
+        color: rgb(34, 125, 199);
       }
-      .analysis-status {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        position: absolute;
-        left: 568px;
-        top: 110px;
-        font-family: system-ui;
-      }
-
-      /* .donut-status {} */
+    
     </style>
   </head>
   <body>
@@ -488,13 +411,81 @@
               >
             </li>
             <li style="color: #3b82f6; font-size: 30px">
-              <span style="color: black;font-size: 16px;
+              <span
+                style="
+                  color: black;
+                  font-size: 16px;
                   position: absolute;
                   bottom: 10px;
-                  left: 35px;">Pending</span>
+                  left: 35px;
+                "
+                >Pending</span
+              >
             </li>
           </ul>
         </div>
+      </div>
+      <div class="end-body">
+        <table class="table-data">
+          <tr class="table-tr">
+            <th class="table-td" style="color: #656767;font-weight: 500;background-color: #f1f5f9;">EXECUTION ID</th>
+            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">NAME</th>
+            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">DURATION</th>
+            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">START TIME</th>
+            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">END TIME</th>
+            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">STATUS</th>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-td"><a href="#">EXE-483</a></td>
+            <td class="table-td">test</td>
+            <td class="table-td">-</td>
+            <td class="table-td">27 / Jan / 2026 07:26:35 PM</td>
+            <td class="table-td">27 / Jan / 2026 07:26:35 PM</td>
+            <td class="table-td">
+              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+            </td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-td"><a href="#">EXE-482</a></td>
+            <td class="table-td">testsuite 1</td>
+            <td class="table-td">-</td>
+            <td class="table-td">27 / Jan / 2026 07:25:49 PM</td>
+            <td class="table-td">27 / Jan / 2026 07:25:49 PM</td>
+            <td class="table-td">
+              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+            </td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-td"><a href="#">EXE-481</a></td>
+            <td class="table-td">wertyu</td>
+            <td class="table-td">-</td>
+            <td class="table-td">27 / Jan / 2026 07:25:27 PM</td>
+            <td class="table-td">27 / Jan / 2026 07:25:27 PM</td>
+            <td class="table-td">
+              <img src="assets/imgs/fail_icon.svg" alt="" />FAIL
+            </td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-td"><a href="#">EXE-480</a></td>
+            <td class="table-td">test</td>
+            <td class="table-td">-</td>
+            <td class="table-td">27 / Jan / 2026 07:22:28 PM</td>
+            <td class="table-td">27 / Jan / 2026 07:22:28 PM</td>
+            <td class="table-td">
+              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+            </td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-td"><a href="#">EXE-479</a></td>
+            <td class="table-td">aaaaaaaaaaaaaaaaaaaa...</td>
+            <td class="table-td">-</td>
+            <td class="table-td">23 / Jan / 2026 06:11:06 PM</td>
+            <td class="table-td">23 / Jan / 2026 06:11:06 PM</td>
+            <td class="table-td">
+              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
