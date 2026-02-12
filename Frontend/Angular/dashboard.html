@@ -10,34 +10,67 @@
         border: 1px solid lightgray;
         background-color: white;
         max-width: 100%;
-        min-height: 370px;
+        min-height: 385px;
         padding: 20px;
         margin: 15px 16px 0;
         border-radius: 10px;
-        
       }
       .table-data {
-        margin-top: 40px;
-        border: 1px solid black;
+        margin-top: 20px;
+        border: 1px solid lightgray;
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
+        overflow: hidden;
+        border-radius: 10px;
       }
       .table-data tr {
-        height: 45px;
+        height: 47px;
+      }
+      .table-data th {
+        border: 1px solid #e5e7eb;
+      }
+
+      .table-data td {
+        border: none;
       }
       .table-tr,
       .table-td {
         padding: 8px 12px;
-        border: 1px solid #e5e7eb;
+
+        /* border: 0px solid #e5e7eb; */
         text-align: left;
         font-family: system-ui;
         font-size: 13px;
-        
       }
       a {
         color: rgb(34, 125, 199);
       }
-    
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .heading {
+        font-family: system-ui;
+        font-size: 17px;
+        font-weight: 700;
+      }
+      .a-tag {
+        text-decoration: underline dotted;
+      }
+      #view-button {
+        height: 37px;
+        background-color: white;
+        border-radius: 7px;
+        border: 1px solid lightgray;
+        font-weight: bold;
+        font-family: system-ui;
+        font-size: 18px;
+      }
+      #view-button:hover {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -410,7 +443,7 @@
                 >Skipped</span
               >
             </li>
-            <li style="color: #3b82f6; font-size: 30px">
+            <li style="color: lightgray; font-size: 30px">
               <span
                 style="
                   color: black;
@@ -426,17 +459,77 @@
         </div>
       </div>
       <div class="end-body">
+        <div class="header">
+          <span class="heading">Recent Executions</span>
+          <button id="view-button">
+            View All Executions <img src="assets/imgs/arrowIcon.svg" alt="" />
+          </button>
+        </div>
         <table class="table-data">
           <tr class="table-tr">
-            <th class="table-td" style="color: #656767;font-weight: 500;background-color: #f1f5f9;">EXECUTION ID</th>
-            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">NAME</th>
-            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">DURATION</th>
-            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">START TIME</th>
-            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">END TIME</th>
-            <th class="table-td" style="color: #656767;font-weight: 500; background-color: #f1f5f9;">STATUS</th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              EXECUTION ID
+            </th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              NAME
+            </th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              DURATION
+            </th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              START TIME
+            </th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              END TIME
+            </th>
+            <th
+              class="table-td"
+              style="
+                color: #656767;
+                font-weight: 500;
+                background-color: #f1f5f9;
+              "
+            >
+              STATUS
+            </th>
           </tr>
           <tr class="table-tr">
-            <td class="table-td"><a href="#">EXE-483</a></td>
+            <td class="table-td"><a class="a-tag" href="#">EXE-483</a></td>
             <td class="table-td">test</td>
             <td class="table-td">-</td>
             <td class="table-td">27 / Jan / 2026 07:26:35 PM</td>
@@ -446,7 +539,7 @@
             </td>
           </tr>
           <tr class="table-tr">
-            <td class="table-td"><a href="#">EXE-482</a></td>
+            <td class="table-td"><a class="a-tag" href="#">EXE-482</a></td>
             <td class="table-td">testsuite 1</td>
             <td class="table-td">-</td>
             <td class="table-td">27 / Jan / 2026 07:25:49 PM</td>
@@ -456,7 +549,7 @@
             </td>
           </tr>
           <tr class="table-tr">
-            <td class="table-td"><a href="#">EXE-481</a></td>
+            <td class="table-td"><a class="a-tag" href="#">EXE-481</a></td>
             <td class="table-td">wertyu</td>
             <td class="table-td">-</td>
             <td class="table-td">27 / Jan / 2026 07:25:27 PM</td>
@@ -466,7 +559,7 @@
             </td>
           </tr>
           <tr class="table-tr">
-            <td class="table-td"><a href="#">EXE-480</a></td>
+            <td class="table-td"><a class="a-tag" href="#">EXE-480</a></td>
             <td class="table-td">test</td>
             <td class="table-td">-</td>
             <td class="table-td">27 / Jan / 2026 07:22:28 PM</td>
@@ -476,7 +569,7 @@
             </td>
           </tr>
           <tr class="table-tr">
-            <td class="table-td"><a href="#">EXE-479</a></td>
+            <td class="table-td"><a class="a-tag" href="#">EXE-479</a></td>
             <td class="table-td">aaaaaaaaaaaaaaaaaaaa...</td>
             <td class="table-td">-</td>
             <td class="table-td">23 / Jan / 2026 06:11:06 PM</td>
