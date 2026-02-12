@@ -71,6 +71,18 @@
       #view-button:hover {
         cursor: pointer;
       }
+      .status-icon {
+        display: inline-flex;
+        border: 1px aliceblue;
+        padding: 5px 5px 5px 5px;
+        border-radius: 5px;
+        color: rgb(87 107 116 / 88%);
+        font-weight: 800;
+        background-color: rgba(236, 235, 235, 0.877);
+      }
+      .sweep-btn {
+        margin-right: 64%;
+      }
     </style>
   </head>
   <body>
@@ -461,6 +473,12 @@
       <div class="end-body">
         <div class="header">
           <span class="heading">Recent Executions</span>
+          <div class="sweep-btn">
+            <button>
+              <div class="testcase">Test Case</div>
+            </button>
+            <button><div class="testsuite">Test Suite</div></button>
+          </div>
           <button id="view-button">
             View All Executions <img src="assets/imgs/arrowIcon.svg" alt="" />
           </button>
@@ -523,6 +541,7 @@
                 color: #656767;
                 font-weight: 500;
                 background-color: #f1f5f9;
+                width: 100px;
               "
             >
               STATUS
@@ -535,7 +554,12 @@
             <td class="table-td">27 / Jan / 2026 07:26:35 PM</td>
             <td class="table-td">27 / Jan / 2026 07:26:35 PM</td>
             <td class="table-td">
-              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+              <div class="status-icon">
+                <img
+                  src="assets/imgs/aborted_icon.svg"
+                  alt=""
+                />&nbsp;&nbsp;ABORTED
+              </div>
             </td>
           </tr>
           <tr class="table-tr">
@@ -545,7 +569,12 @@
             <td class="table-td">27 / Jan / 2026 07:25:49 PM</td>
             <td class="table-td">27 / Jan / 2026 07:25:49 PM</td>
             <td class="table-td">
-              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+              <div class="status-icon">
+                <img
+                  src="assets/imgs/aborted_icon.svg"
+                  alt=""
+                />&nbsp;&nbsp;ABORTED
+              </div>
             </td>
           </tr>
           <tr class="table-tr">
@@ -555,7 +584,12 @@
             <td class="table-td">27 / Jan / 2026 07:25:27 PM</td>
             <td class="table-td">27 / Jan / 2026 07:25:27 PM</td>
             <td class="table-td">
-              <img src="assets/imgs/fail_icon.svg" alt="" />FAIL
+              <div
+                class="status-icon"
+                style="color: #ef4444; background-color: #ffeded"
+              >
+                <img src="assets/imgs/fail_icon.svg" alt="" />&nbsp;&nbsp;FAIL
+              </div>
             </td>
           </tr>
           <tr class="table-tr">
@@ -565,7 +599,12 @@
             <td class="table-td">27 / Jan / 2026 07:22:28 PM</td>
             <td class="table-td">27 / Jan / 2026 07:22:28 PM</td>
             <td class="table-td">
-              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+              <div class="status-icon">
+                <img
+                  src="assets/imgs/aborted_icon.svg"
+                  alt=""
+                />&nbsp;&nbsp;ABORTED
+              </div>
             </td>
           </tr>
           <tr class="table-tr">
@@ -575,7 +614,12 @@
             <td class="table-td">23 / Jan / 2026 06:11:06 PM</td>
             <td class="table-td">23 / Jan / 2026 06:11:06 PM</td>
             <td class="table-td">
-              <img src="assets/imgs/aborted_icon.svg" alt="" />ABORTED
+              <div class="status-icon">
+                <img
+                  src="assets/imgs/aborted_icon.svg"
+                  alt=""
+                />&nbsp;&nbsp;ABORTED
+              </div>
             </td>
           </tr>
         </table>
