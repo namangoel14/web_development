@@ -440,3 +440,13 @@ eg;
 </style>
 
 These form of selectors are known as pseudo seletors in CSS. 
+Filter	What It Does
+blur(px)	Makes element blurry
+brightness(%)	Makes it lighter or darker
+contrast(%)	Increases/decreases contrast
+grayscale(%)	Converts to black & white
+sepia(%)	Brown vintage effect
+invert(%)	Inverts colors
+saturate(%)	Increases color intensity
+opacity(%)	Changes transparency
+drop-shadow()	Adds shadow
