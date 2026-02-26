@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors in CSS</title>
+    <style>
+      h1 {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+      }
+      div p {
+        background-color: green;
+        color: yellowgreen;
+        font-weight: bold;
+      }
+      div li p {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+      }
+      div > p {
+        background-color: orange;
+        color: black;
+        font-weight: bold;
+      }
+      div + p {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+      }
+      div + p {
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is heading for my webpage.</h1>
+    <div class="container">
+      <ul>
+        <li class="item"><p>This is a para of li</p></li>
+        <li class="item">This is just a li.</li>
+      </ul>
+      <div class="row">
+        <p>This is paragraph inside a row div.</p>
+      </div>
+      <p>This is a paragraph inside a container div.</p>
+    </div>
+    <p>This is a paragraph outside the container div.</p>
+  </body>
+</html>
