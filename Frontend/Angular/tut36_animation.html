@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes in CSS</title>
+    <style>
+        .container{
+            background-color: rgb(228, 135, 14,0.5);
+        }
+        .box h2 {
+            text-align: center;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: rgb(14, 228, 135,0.5);
+            border: 2px solid black;
+            border-radius: 10px;
+            /* animation-name: naman1; */
+            /* animation-name: naman1; */
+            /* animation-duration: 8s; */
+            /* animation-iteration-count: 1; */
+            /* animation-fill-mode: none; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction:alternate-reverse; */
+
+            /* Shorthand property */
+
+            animation: naman1 8s ease-in-out 3s 1 alternate-reverse;
+
+        }
+
+        @keyframes naman2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top:250px;
+                left:0px;
+            }
+            
+            75%{
+                top:250px;
+                left:250px;
+            }
+            
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+
+        @keyframes naman1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h2>Box1</h2></div>
+    </div>
+
+</body>
+</html>
