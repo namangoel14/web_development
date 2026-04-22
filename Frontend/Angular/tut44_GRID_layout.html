@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID layout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+        }
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 10px;
+        }
+        .item-section {
+            background-color: peru;
+            border: 3px solid black;
+            padding: 10px 10px;
+        }
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+              "header header header header"
+              "navbar navbar navbar navbar"
+              "section section section aside"
+              "footer footer footer footer";
+            
+      }
+      #aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+      .title {
+        grid-area: header;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="item">Home AboutUs ContactUS</div>
+      <div id="section" class="item">
+        <div class="title">Inner Grid</div>
+          <div id="navbar" class="item-section">Home AboutUs ContactUS</div>
+          <div id="section" class="item-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magnam!</div>
+          <div id="aside" class="item-section">Lorem ipsum dolor sit amet.</div>
+          <footer class="item-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, delectus?</footer>
+      </div>
+      <div id="aside" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        assumenda porro animi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Provident suscipit molestiae non impedit quas
+        voluptate odio aut, eum, aperiam totam nobis beatae repellat fugit qui
+        eius earum optio error enim alias? Illum ipsum quasi mollitia
+        necessitatibus beatae nisi doloremque vitae delectus sunt, repellendus
+        provident unde tempora commodi molestiae aperiam eos nam obcaecati
+        tenetur. Modi repellendus odio minus eius, reprehenderit veniam.
+      </div>
+      <footer class="item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+        minus!
+      </footer>
+      <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+  </body>
+</html>
