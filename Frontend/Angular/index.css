@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+/* NAVBAR CSS */
+
+#navbar {
+  display: flex;
+  position: absolute;
+  border-bottom: 2px solid white;
+  width: 100%;          /* ✅ full width */
+  max-width: 90%;    /* ✅ limit on large screens */
+  margin: 0px auto;       /* ✅ center */
+  padding: 10px;      /* ✅ responsive spacing */
+  left: 50%;                      /* ✅ move to middle */
+  transform: translateX(-50%);    /* ✅ shift back half width */
+  top: 20px;
+  
+}
+
+nav div img {
+  border: 2px solid white;
+  display: inline-block;
+  border-radius: 50px;
+  width: 70px;
+  cursor: pointer;
+ 
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 14px;
+  padding: 0px 10px;
+  
+}
+.nav-list {
+    padding: 0px 20px;
+    font-size: 25px;
+}
+
+nav ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 0;
+    height: 2px;
+    background: blue;
+  
+
+    
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    
+}
+
+.auth-items {}
+
+/* Front-Image */
+
+.nav-img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.container {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 200px;
+}
+.container h1 {
+  color: white;
+}
+
