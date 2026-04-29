@@ -107,6 +107,7 @@ nav .auth-items img {
   display: block;
   width: 100%;
   height: 100%;
+  max-height: 1150px;
   object-fit: cover;
   opacity: 0.5;
 }
@@ -117,8 +118,8 @@ nav .auth-items img {
   flex-direction: column;
   height: 600px;
   align-items: center;
-  justify-content: center;
-  padding: 3px 200px;
+  
+  padding: 65px 200px;
   background-color: white;
 }
 .container h1 {
