@@ -21,6 +21,7 @@ body {
   left: 50%; /* ✅ move to middle */
   transform: translateX(-50%); /* ✅ shift back half width */
   top: 20px;
+  z-index: 10;
 }
 
 nav .logo img {
@@ -74,29 +75,25 @@ nav .auth-items span {
 
 /* underline (hidden initially) */
 nav .auth-items span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;        /* small offset */
-    width: 0 ;
-    height: 2px;
-    background: blue;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px; /* small offset */
+  width: 0;
+  height: 2px;
+  background: blue;
 }
 
 /* on hover → show underline */
 nav .auth-items span:hover::after {
-    width: 100% ;
+  width: 100%;
 }
-
-
 
 nav .auth-items img {
   filter: invert(1);
   width: 30px;
   margin: 15px;
   cursor: pointer;
-  
-  
 }
 
 /* Front-Image */
@@ -118,11 +115,55 @@ nav .auth-items img {
   flex-direction: column;
   height: 600px;
   align-items: center;
-  
+
   padding: 65px 200px;
   background-color: white;
 }
 .container h1 {
   color: #262626;
   font-size: 2.8125rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.car-info {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;  
+  width: 90%;
+  z-index: 2;
+}
+.car-span {
+  font-size: 2.25rem;
+   font-family: "Oswald", sans-serif;
+}
+.car-info h1 {
+  font-size: 20rem;
+   font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+.car-price {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
+}
+.car-btn {
+  margin-top: 20px;
+    width: 80%;
+    padding: 5%;
+    background-color: #1c69d4;
+    color: white;
+    font-size: 1.50rem;
+     font-family: "Oswald", sans-serif;
+    border-radius: 5px;
+}
+.car-btn:hover {
+  cursor: pointer;
+  background-color: #115cce;
 }
