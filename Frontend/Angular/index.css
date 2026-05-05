@@ -122,6 +122,7 @@ nav .auth-items img {
 .container h1 {
   color: #262626;
   font-size: 2.8125rem;
+  font-family: "Oswald", sans-serif;
 }
 
 .hero {
@@ -134,17 +135,17 @@ nav .auth-items img {
   left: 5%;
   transform: translateY(-50%);
   color: white;
-  max-width: 500px;  
+  max-width: 500px;
   width: 90%;
   z-index: 2;
 }
 .car-span {
   font-size: 2.25rem;
-   font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 .car-info h1 {
   font-size: 20rem;
-   font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 1;
 }
 .car-price {
@@ -155,15 +156,50 @@ nav .auth-items img {
 }
 .car-btn {
   margin-top: 20px;
-    width: 80%;
-    padding: 5%;
-    background-color: #1c69d4;
-    color: white;
-    font-size: 1.50rem;
-     font-family: "Oswald", sans-serif;
-    border-radius: 5px;
+  width: 80%;
+  padding: 5%;
+  background-color: #1c69d4;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
 }
 .car-btn:hover {
   cursor: pointer;
   background-color: #115cce;
+}
+
+.container-ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+
+.car-tools {
+  padding: 0px 322px;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+}
+
+.car-logo img {
+  width: 80px;
+  height: auto;
+  margin: 60px 313px;
+}
+
+.car-tool1 button {
+  margin: 0px 270px;
+  padding: 15px 65px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.car-tool1 button:hover {
+  
+  cursor: pointer;
+  outline:2px solid black;
 }
