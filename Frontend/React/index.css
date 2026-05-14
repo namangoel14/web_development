@@ -139,14 +139,14 @@ nav .auth-items img {
   width: 90%;
   z-index: 2;
 }
-.car-span {
-  font-size: 2.25rem;
-  font-family: "Oswald", sans-serif;
-}
 .car-info h1 {
   font-size: 20rem;
   font-family: "Oswald", sans-serif;
   line-height: 1;
+}
+.car-span {
+  font-size: 2.25rem;
+  font-family: "Oswald", sans-serif;
 }
 .car-price {
   display: inline-block;
@@ -202,4 +202,36 @@ nav .auth-items img {
   
   cursor: pointer;
   outline:2px solid black;
+}
+
+
+
+.m440i img{
+  width: 100%;
+  display: block;
+}
+
+.car-info2 {
+  position: absolute;
+  left: 5%;
+  transform: translateY(-170%);
+  color: white;
+  max-width: 500px;
+  width: 90%;
+  z-index: 2;
+}
+.car-info2 h1 {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+
+.car-span2 {
+  font-size: 1.50rem;
+  font-family: "Oswald", sans-serif;
+}
+
+#space {
+  height: 50px;
+  background-color: white;;
 }
