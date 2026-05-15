@@ -163,6 +163,7 @@ nav .auth-items img {
   font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
   border-radius: 5px;
+  border: none;
 }
 .car-btn:hover {
   cursor: pointer;
@@ -234,4 +235,76 @@ nav .auth-items img {
 #space {
   height: 50px;
   background-color: white;;
+}
+
+.myVideo {
+  width: 100%; 
+  display: block;
+  cursor: pointer;
+}
+
+
+.car-info3 {
+  position: absolute;
+  left: 5%;
+  transform: translateY(-110%);
+  color: white;
+  max-width: 500px;
+  width: 90%;
+  z-index: 2;
+}
+.car-info3 h1 {
+  font-size: 15rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+.car-price3 {
+      display: inline-block;
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    margin-top: 50px;
+}
+
+.car-span3 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.car-range img{
+  display: block;
+}
+.car-info4 {
+  position: absolute;
+  left: 5%;
+  transform: translateY(-170%);
+  color: white;
+  max-width: 500px;
+  width: 90%;
+  z-index: 2;
+}
+.car-info4 h1 {
+  font-size: 2.8rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+.car-span4 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.car-btn4 {
+  margin-top: 20px;
+  width: 80%;
+  padding: 3%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  border: 2px solid white;
+
+}
+.car-btn4:hover {
+  cursor: pointer;
+  outline: white solid 2px;
 }
