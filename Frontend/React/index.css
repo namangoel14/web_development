@@ -200,14 +200,11 @@ nav .auth-items img {
 }
 
 .car-tool1 button:hover {
-  
   cursor: pointer;
-  outline:2px solid black;
+  outline: 2px solid black;
 }
 
-
-
-.m440i img{
+.m440i img {
   width: 100%;
   display: block;
 }
@@ -228,21 +225,20 @@ nav .auth-items img {
 }
 
 .car-span2 {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
 }
 
 #space {
   height: 50px;
-  background-color: white;;
+  background-color: white;
 }
 
 .myVideo {
-  width: 100%; 
+  width: 100%;
   display: block;
   cursor: pointer;
 }
-
 
 .car-info3 {
   position: absolute;
@@ -259,10 +255,10 @@ nav .auth-items img {
   line-height: 1;
 }
 .car-price3 {
-      display: inline-block;
-    font-size: 1.5rem;
-    font-family: "Oswald", sans-serif;
-    margin-top: 50px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
 }
 
 .car-span3 {
@@ -270,7 +266,7 @@ nav .auth-items img {
   font-family: "Oswald", sans-serif;
 }
 
-.car-range img{
+.car-range img {
   display: block;
 }
 .car-info4 {
@@ -302,9 +298,103 @@ nav .auth-items img {
   font-family: "Oswald", sans-serif;
   border-radius: 5px;
   border: 2px solid white;
-
 }
 .car-btn4:hover {
   cursor: pointer;
   outline: white solid 2px;
+}
+
+.x1-car img {
+  width: 100%;
+  display: block;
+}
+
+.car-info5 {
+  position: absolute;
+  left: 5%;
+  transform: translateY(-170%);
+  color: white;
+  max-width: 500px;
+  width: 90%;
+  z-index: 2;
+}
+.car-info5 h1 {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+.car-span5 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.car-span6 {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
+}
+
+.car-price5 {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
+}
+
+.car-btn5 {
+  margin-top: 20px;
+  width: 80%;
+  padding: 3%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.car-btn5:hover {
+  cursor: pointer;
+  outline: white solid 2px;
+}
+
+#space6 {
+  height: 90px;
+  background-color: white;
+}
+
+.lwb5-car {
+  background-color: white;
+}
+
+.lwb5-car img {
+  display: block;
+  width: 48%;
+  position: relative;
+  left: 4%;
+}
+
+#space7 {
+  height: 180px;
+  background-color: white;
+}
+
+.footer1-signup {
+  height: 100px;
+  background-color: #f0f0f0;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+.footer2-details {
+  height: 1000px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid grey;
+}
+
+.footer3 {
+  height: 100px;
+  background-color: #f0f0f0;
+  /* border: 2px solid grey; */
 }
