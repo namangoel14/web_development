@@ -398,3 +398,48 @@ nav .auth-items img {
   background-color: #f0f0f0;
   /* border: 2px solid grey; */
 }
+
+.summary {
+  position: absolute;
+  left: 56%;
+  transform: translateY(-170%);
+  color: black;
+  max-width: 500px;
+  width: 90%;
+  z-index: 2;
+  padding-bottom: 125px;
+}
+.summary h1 {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+}
+.offer {
+  display: block;
+  font-size: 3.1rem;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 20px;
+}
+.details {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+.more {
+  
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  padding-bottom: 20px;
+}
+.k-more {
+  padding-right: 10px;
+}
+.arrow {
+  font-size:1.6rem;
+}
+.more:hover {
+  cursor: pointer;
+ color: #115cce;
+}
